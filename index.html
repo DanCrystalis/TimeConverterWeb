@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/x-icon" href="TCflavicon.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Time Converter</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Time Converter</h1>
+            <button id="fmgButton" class="btn btn-primary">FMG Default Locations</button>
+            <button id="convertButton" class="btn btn-primary">Convert</button>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="currentTime" class="form-label">Current Time:</label>
+                        <input type="text" id="currentTime" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="currentDate" class="form-label">Current Date:</label>
+                        <input type="text" id="currentDate" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="currentLocation" class="form-label">Current Location:</label>
+                        <input type="text" id="currentLocation" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="searchInput" class="form-label">Search Locations:</label>
+                        <input type="text" id="searchInput" class="form-control" placeholder="Search for a Locations...">
+                    </div>
+                    <div class="mb-3">
+                        <label for="locationSelect" class="form-label">Browse All Locations:</label>
+                        <select id="locationSelect" class="form-select">
+                            <option value="">Select a location</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="convertedTimes" class="form-label">Your Converted Times:</label>
+                        <textarea id="convertedTimes" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="luxon.js"></script>
+        <script src="TimeConverterWeb.js"></script>
+    </body>
+</html>
